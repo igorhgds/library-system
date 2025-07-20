@@ -1,4 +1,4 @@
-package henrique.igor.library_system.repositories;
+package henrique.igor.library_system.repositories.user;
 
 import henrique.igor.library_system.entities.User;
 import org.springframework.data.jpa.repository.JpaRepository;
