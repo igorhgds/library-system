@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: library-system-project
+  profiles:
+    active: ${PROFILE:dev}
+  jpa:
+    hibernate:
+      ddl-auto: ${HIBERNATE_DDL:none}
+server:
+  servlet:
+    context-path: /

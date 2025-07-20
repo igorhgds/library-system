@@ -1,0 +1,19 @@
+logging:
+  level:
+    org.hibernate.SQL: DEBUG
+    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+  datasource:
+    password: ${DB_PASSWORD:135790}
+    username: ${DB_USERNAME:postgres}
+    url: ${DB_URL:jdbc:postgresql://localhost:5432/library-system-db}
+    driver-class-name: org.postgresql.Driver
+server:
+  port: ${PORT:8080}
